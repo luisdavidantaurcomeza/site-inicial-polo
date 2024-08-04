@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-size: 50%;
 }
 
 html{
@@ -10,21 +11,19 @@ html{
 
 body {
   background-color: #000123;
-  min-height: 100vh;
+  background-size: 50%;;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
 }
 
-h1 {
-  color: #ece4e4;
-}
-
 header {
-  position: fixed;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.13);
+  background-size: 50%;
   padding: 10px 0;
-  z-index: 1000;
+  z-index: 1090;
   align-items: center;
   justify-content: space-between;
 }
@@ -63,11 +62,12 @@ nav ul li a {
   color: #ffffffb7;
   font-weight: bold;
   font-size: 18px;
-  padding: 5px 10px;
+  padding: 10px 15px;
 }
 
 nav ul li a:hover {
   background-color: #492e55;
+  background-size: 50%;
   color: #fff;
 }
 
@@ -77,9 +77,10 @@ nav ul li a:hover {
   color: white;
   position: absolute;
   display: inline-block;
-  margin-top: 150px;
-  margin-left: 900px;
+  margin-top: 10px;
+  margin-left: 880px;
   font-family: "Nova Square", sans-serif;
+  
 }
 
 .prr {
@@ -95,6 +96,7 @@ nav ul li a:hover {
 
 #banner.parallax {
   background-attachment: fixed;
+  background-size: 50%;
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: 100%;
@@ -111,8 +113,8 @@ nav ul li a:hover {
   color: white;
   font-family: "Nova Square", sans-serif;
   font-size: 150px;
-  margin-top: 600px;
-  margin-left: 150px;
+  margin-top: 100px;
+  margin-left: 80px;
 }
 
 .botao2 {
@@ -121,10 +123,10 @@ nav ul li a:hover {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 50px;
+  font-size: 60px;
   color: #ff00d4;
-  margin-top: 1300px;
-  margin-left: 1090px;
+  margin-top: 400px;
+  margin-left: px;
   cursor: pointer;
   text-decoration: none;
   background-color: #930fff;
@@ -154,12 +156,13 @@ section {
 }
 .explicacao {
   font-optical-sizing: auto;
-  font-weight: 500;
+  padding: 60px;
+  font-weight: 200;
   font-style: normal;
-  font-size: 40px;
+  font-size: 35px;
   color: #fffdfd;
   position: absolute;
-  margin-top: 100px;
+  margin-top: 80px;
   text-align: justify;
   text-indent: 2em;
 }
@@ -167,38 +170,30 @@ section {
 .texto {
   font-family: "Nova Square", sans-serif;
   font-style: normal;
-  font-size: 100px;
+  font-size: 80px;
   color: #fffdfd;
   position: absolute;
   margin-top: 400px;
-  margin-left: 500px;
+  margin-left: 150px;
+  Text-align: center;
 }
 
-.texto1 {
-  font-family: "Nova Square", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 100px;
-  color: #ffffff;
-  position: absolute;
-  margin-top: 490px;
-  margin-left: 500px;
-}
+
 
 .botao {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
-  font-size: 50px;
+  font-size: 40px;
   color: #ffffff;
   position: absolute;
-  margin-top: 650px;
-  margin-left: 1090px;
+  margin-top: 40%;
+  margin-left: 100px;
   cursor: pointer;
   text-decoration: none;
   background-color: #ff0f7b;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .botao:hover {
@@ -248,24 +243,45 @@ section {
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 768px) {
-  header {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
-  }
 
+@media only screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    position: static;
+    order: 1;
+  }
   .logo {
     width: 150px;
   }
 
+
   nav {
-    margin-left: 0;
+    width: 100%;
+    order: 2;
   }
 
   nav ul {
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin-bottom: 2px;
+    text-align: center;
+  }
+  nav ul li a {
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav.active ul {
+    display: flex;
   }
 
   .pr {
@@ -284,14 +300,15 @@ section {
   
 
   #siga {
-    font-size: 100px;
-    margin-left: 10%;
-    margin-top: 70%;
+    color: #a0064b;
+    font-size: 20px;
+    margin-left: 30%;
+    margin-top: 200%;
   }
 
   .botao2 {
     font-size: 30px;
-    margin-top: 120%;
+    margin-top: 210%;
     margin-left: 50%;
     transform: translateX(-50%);
   }
@@ -300,25 +317,40 @@ section {
   width: 720px;
   height: 1000px;
 }
-
-  .faça {
-    font-size: 30px;
-    margin-left: 10%;
-  }
-
-
-  .texto,
-  .texto1 {
-    font-size: 60px;
-    margin-left: 10%;
+.explicacao {
+  font-optical-sizing: auto;
+  padding: 20px;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 15px;
+  color: #fffdfd;
+  position: absolute;
+  margin-top: 2px;
+  text-align: justify;
+  text-indent: 2em;
+  line-height: 1.4;
+}
+.faça {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+ .texto {
+    font-size: 24px;
+    font-weight: bold;
+    Text-align: center;
+    margin-left: 5%;
+    margin: 300px 50px;
   }
 
   .botao {
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 80%;
-    margin-left: 60%;
-    transform: translateX(-50%);
+    margin-left: 10%;
+    transform: translateX(-20%);
   }
+
 
   h4 {
     font-size: 40px;
@@ -350,52 +382,69 @@ section {
 
 /*1000 de width*/
 
-@media only screen and  (min-width: 800px) and ( max-width: 1000px) {
+@media only screen and  (min-width: 769px) and ( max-width: 1024px) {
   header {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
+    position: static;
+    order: 1;
   }
-
+  body {
+    display: flex;
+    flex-direction: column;
+  }
 
   .logo {
     width: 150px;
   }
 
   nav {
-    margin-left: 0;
+    width: 100%;
+    order: 2;
   }
 
   nav ul {
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
   }
 
+  nav.active ul {
+    display: flex;
+  }
+
+
   .pr {
-    width: 100%;
+    width: 60%;
     font-size: 30px;
-    margin-top: 808px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    margin-top: 500px;
+    margin-left: 30%;
+    transform: translateX(-70%);
   }
 
   .con {
     width: 90%;
-    margin-left: 5%;
+    margin-left: 4%;
     margin-top: 10px;
-  }
-
-  
+  }  
 
   #siga {
     font-size: 100px;
     margin-left: 10%;
-    margin-top: 100%;
+    margin-top: 80%;
   }
 
   .botao2 {
     font-size: 30px;
-    margin-top: 120%;
+    margin-top: 102%;
     margin-left: 50%;
     transform: translateX(-50%);
   }
@@ -405,24 +454,36 @@ section {
   height: 800px;
   margin-top: 30%;
 }
-
+.explicacao {
+  position: absolute;
+  order: 3;
+  font-size: 30px;
+  margin: 25px;
+  padding: 10px;
+  text-align: justify;
+}
   .faça {
-    font-size: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
     margin-left: 10%;
   }
 
 
-  .texto,
-  .texto1 {
-    font-size: 60px;
-    margin-left: 10%;
+  .texto{
+    font-size: 24px;
+    font-weight: bold;
+    Text-align: center;
+    margin-left: 5%;
+    margin: 300px 50px;
   }
 
   .botao {
     font-size: 30px;
-    margin-top: 60%;
-    margin-left: 80%;
-    transform: translateX(-50%);
+    margin-top: 40%;
+    margin-left: 10%;
+    transform: translateX(-20%);
   }
 
   h4 {
