@@ -152,6 +152,16 @@ section {
   margin-top: 335px;
   margin-left: 700px;
 }
+.explicacao {
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  color: #fffdfd;
+  position: absolute;
+  margin-top: 100px;
+  text-align: justify;
+}
 
 .texto {
   font-family: "Nova Square", sans-serif;
@@ -228,7 +238,7 @@ h4 {
 
 /* Estilos para as seções */
 section {
-  height: 300px;
+  height: 10px;
 }
 
 /* texto desenvolvimento */
