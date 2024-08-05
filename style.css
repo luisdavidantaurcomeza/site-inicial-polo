@@ -286,7 +286,7 @@ section {
 
   .pr {
     font-size: 20px;
-    margin-top: 280px;
+    margin-top: 230px;
     margin-left: 50%;
     transform: translateX(-50%);
   }
@@ -346,7 +346,7 @@ section {
 
   .botao {
     font-size: 20px;
-    margin-top: 160%;
+    margin-top: 150%;
     margin-left: 10%;
     transform: translateX(-20%);
   }
