@@ -244,7 +244,7 @@ section {
 
 /* Mobile Styles */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   body {
     display: flex;
     flex-direction: column;
@@ -382,7 +382,7 @@ section {
 
 /*1000 de width*/
 
-@media only screen and  (min-width: 769px) and ( max-width: 1024px) {
+@media only screen and  (min-width: 768px) and ( max-width: 1024px) {
   header {
     position: static;
     order: 1;
@@ -439,12 +439,12 @@ section {
   #siga {
     font-size: 100px;
     margin-left: 10%;
-    margin-top: 80%;
+    margin-top: 110%;
   }
 
   .botao2 {
     font-size: 30px;
-    margin-top: 102%;
+    margin-top: 140%;
     margin-left: 50%;
     transform: translateX(-50%);
   }
