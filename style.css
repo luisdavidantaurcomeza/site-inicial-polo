@@ -381,8 +381,10 @@ section {
 
 
 /*1000 de width*/
+/*Tablets*/
 
-@media only screen and  (min-width: 768px) and ( max-width: 1024px) {
+
+@media only screen and  (min-width: 766px) and ( max-width: 1366px) {
   header {
     position: static;
     order: 1;
@@ -439,12 +441,12 @@ section {
   #siga {
     font-size: 100px;
     margin-left: 10%;
-    margin-top: 110%;
+    margin-top: 80%;
   }
 
   .botao2 {
     font-size: 30px;
-    margin-top: 140%;
+    margin-top: 100%;
     margin-left: 50%;
     transform: translateX(-50%);
   }
@@ -465,7 +467,7 @@ section {
   .faça {
     font-size: 18px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 300px;
     text-align: center;
     margin-left: 10%;
   }
@@ -477,6 +479,11 @@ section {
     Text-align: center;
     margin-left: 5%;
     margin: 300px 50px;
+    margin-top: 350px;
+
+  }
+  .texto1{
+    margin-top: 420px;
   }
 
   .botao {
